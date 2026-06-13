@@ -614,6 +614,9 @@ body {
             }
             nav ul { flex-direction: column; gap: 20px; }
             #menu-toggle:checked ~ .nav-menu-wrapper { top: 0; }
+            #menu-toggle:checked ~ .hamburger-label span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+            #menu-toggle:checked ~ .hamburger-label span:nth-child(2) { opacity: 0; }
+            #menu-toggle:checked ~ .hamburger-label span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
         }
     </style>
 </head>
